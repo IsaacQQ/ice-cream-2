@@ -1,10 +1,5 @@
 .header {
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  z-index: 4;
-
-  // background: $hero-background-color;
 }
 
 .header-container {
@@ -12,7 +7,6 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 8px;
-  position: fixed;
 
   background: $hero-background-color;
 
@@ -57,9 +51,7 @@
   top: 20px;
 
   @include tablet {
-    position: relative;
-    left: 180px;
-    top: -35px;
+    position: fixed;
   }
 }
 
@@ -94,7 +86,7 @@
     display: none;
   }
 
-  &__btn {
+  &-btn {
     width: 209px;
     height: 44px;
     margin-left: auto;
@@ -187,7 +179,7 @@
   color: $dark-title-color;
 
   &__logo {
-    margin-left: 16px;
+    margin-left: 15px;
   }
 
   &:hover,
