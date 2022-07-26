@@ -1,7 +1,10 @@
 .header {
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  z-index: 4;
 
-  background: $hero-background-color;
+  // background: $hero-background-color;
 }
 
 .header-container {
@@ -9,6 +12,9 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 8px;
+  position: fixed;
+
+  background: $hero-background-color;
 
   @include tablet {
     padding-top: 32px;
@@ -221,6 +227,9 @@
 }
 
 .header-nav {
+  // display: flex;
+  // align-items: center;
+
   @media screen and (max-width: 1199px) {
     display: none;
   }
