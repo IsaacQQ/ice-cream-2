@@ -5,16 +5,16 @@
         <use href="./images/sprite.svg#icon-logo"></use>
       </svg>
     </a>
-    <button type="button" class="menu-btn" data-menu-button>
+    <button type="button" class="menu-btn menu-open-btn" >
       <svg aria-label="mobile menu switch" width="20" height="20">
         <use
           href="./images/sprite.svg#icon-Burger"
           class="menu-btn__burger"
         ></use>
-        <use
+        <!-- <use
           href="./images/sprite.svg#icon-close"
           class="menu-btn__close"
-        ></use>
+        ></use> -->
       </svg>
     </button>
 
@@ -46,11 +46,12 @@
     </button>
   
 
-  <div class="burger-menu" data-menu>
-		<svg class="burger-menu__icon-close" width="20" height="20"> <use
+  <div class="burger-menu is-hidden" >
+		<button type="button" class="menu-btn menu-close-btn" >
+		<svg class="menu__close-icon" width="20" height="20"> <use
           href="./images/sprite.svg#icon-close"
-          class="menu-btn__close"
-        ></use></svg>
+        
+        ></use></svg></button>
     <button type="button" class="burger-menu__btn">
       Buy now
       <svg class="burger-menu-btn__logo" width="6" height="8">
